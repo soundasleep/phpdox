@@ -146,6 +146,8 @@ h3 {
 #buildinfo h3 {
     font-size: 1em;
     margin:0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 #buildinfo p {
