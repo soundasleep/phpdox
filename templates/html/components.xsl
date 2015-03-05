@@ -35,7 +35,7 @@
         <nav class="topnav">
             <ul>
                 <li>
-                    <div class="logo"><span>/**</span>phpDox</div>
+                    <div class="logo"><a href="{$base}index.{$extension}"><span>/**</span>phpDox</a></div>
                 </li>
                 <li class="separator"><a href="{$base}index.{$extension}">Overview</a></li>
                 <xsl:if test="$hasNamespaces = 'Y'">
