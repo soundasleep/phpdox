@@ -25,8 +25,8 @@
                     <xsl:call-template name="sidenav" />
                     <section>
                         <h1 id="introduction"><small><xsl:value-of select="$unit/@namespace" />\</small><xsl:value-of select="$unit/@name" /></h1>
-                        <h4><xsl:value-of select="$unit/pdx:docblock/pdx:description/@compact" /></h4>
-                        <p><xsl:copy-of select="pdxf:nl2br($unit/pdx:docblock/pdx:description)" /></p>
+                        <h4><xsl:value-of select="pdxf:linkize($unit/pdx:docblock/pdx:description/@compact)" /></h4>
+                        <p><xsl:copy-of select="pdxf:nl2br(pdxf:linkize($unit/pdx:docblock/pdx:description))" /></p>
                         <xsl:if test="$unit/pdx:docblock">
                         <xsl:call-template name="docblock" />
                         </xsl:if>

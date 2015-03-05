@@ -49,6 +49,14 @@
         </func:result>
     </func:function>
 
+    <func:function name="pdxf:linkize">
+      <xsl:param name="string" />
+      <xsl:variable name="format">
+        cats are <xsl:value-of select="$string" />
+      </xsl:variable>
+      <func:result><xsl:copy-of select="$format" /></func:result>
+    </func:function>
+
     <func:function name="pdxf:nl2br">
             <xsl:param name="string"/>
             <xsl:variable name="format">
